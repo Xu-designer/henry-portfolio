@@ -1,0 +1,305 @@
+body {
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Cinzel", 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+p, footer, ul {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    margin: auto;
+    list-style-type: none;
+    padding: 10px;
+}
+
+
+nav ul a {
+    font-size: 3vw;
+    font-family: "Cinzel", 'Times New Roman', Times, serif;
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+div.star {
+    display: none;
+    width: 60px;
+    background: url(images/portfolio_star_icon.png) repeat;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 90%;
+}
+
+.banner img {
+    display: block;
+    filter: brightness(50%);
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.italic {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 100px;
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+}
+
+header img {
+    margin: auto;
+}
+
+section {
+    width: 75%;
+    margin: auto;
+}
+
+.design {
+    display: flex;
+}
+
+.design a {
+    flex: 1;
+}
+
+.gallery {
+    /* width: 50%; */
+    width: 90%;
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "a a a a a a b b b b b b"
+    "a a a a a a b b b b b b"
+    "a a a a a a c c c c c c"
+    "a a a a a a c c c c c c"
+    "a a a a a a c c c c c c"
+    "d d d d d d c c c c c c"
+    "d d d d d d c c c c c c"
+    "d d d d d d c c c c c c"
+    "d d d d d d e e e e e e"
+    "d d d d d d e e e e e e"
+    "d d d d d d e e e e e e"
+    "d d d d d d e e e e e e"
+    "d d d d d d e e e e e e"
+    "d d d d d d e e e e e e"
+    "f f f f f f e e e e e e"
+    "f f f f f f e e e e e e"
+    "f f f f f f g g g g g g"
+    "f f f f f f g g g g g g"
+    "f f f f f f g g g g g g"
+    "h h h h h h g g g g g g"
+    "h h h h h h g g g g g g"
+    "h h h h h h i i i i i i"
+    "h h h h h h i i i i i i"
+    "h h h h h h i i i i i i"
+    "h h h h h h i i i i i i"
+    "h h h h h h i i i i i i"
+    ;
+    margin: auto;
+}
+
+.mindscape {
+    grid-area: a;
+}
+
+.bittersweet {
+    grid-area: b;
+}
+
+.inspireoakland {
+    grid-area: c;
+}
+
+.sabon {
+    grid-area: d
+}
+
+.battlebottle {
+    grid-area: e;
+}
+
+.parkredesign {
+    grid-area: f;
+}
+
+.zine {
+    grid-area: g;
+}
+
+.japanese {
+    grid-area: h;
+}
+
+.deeplove {
+    grid-area: i;
+}
+
+.project {
+    margin: auto;
+}
+
+.project img {
+    margin: auto;
+}
+
+.side_image {
+    display: flex;
+}
+
+
+.too_long {
+    max-height: 600px;
+}
+
+iframe {
+    max-width: 90%;
+    margin: auto;
+}
+
+footer {
+    background-color: #FFF1C5;
+    margin: auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: block;
+}
+
+footer h2 {
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    .banner h1 {
+        font-size: 45px;
+    }
+
+    div.star {
+        display: block;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section.front {
+        width: 75%;
+    }
+
+    .project {
+        width: 50%
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        padding-right: 10%;
+        gap: 50px;
+    }
+
+    nav ul a {
+        font-size: 20px;
+    }
+
+    .photogrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        max-width: 70%;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+}
