@@ -251,6 +251,10 @@ footer p {
     font-size: 16px;
 }
 
+.photogrid image {
+    margin-bottom: 20px;
+}
+
 
 @media only screen and (min-width: 600px) {
 
@@ -286,10 +290,10 @@ footer p {
 
     .photogrid {
         display: flex;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         justify-content: center;
         gap: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         width: 100%;
         max-width: 100%;
     }
